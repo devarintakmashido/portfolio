@@ -422,7 +422,7 @@
         logTo(log, 'POST /chat → <span class="ok">200 OK</span> · ' + (LIMIT - admitted.length - 1) + ' left');
       } else {
         const retry = ((admitted[0].t + WINDOW - now) / 1000).toFixed(1);
-        logTo(log, 'POST /chat → <span class="err">429</span> · retry in ' + retry + 's');
+        logTo(log, 'POST /chat → <span class="err">429</span> · retry ' + retry + 's');
       }
       if (!raf) raf = requestAnimationFrame(paint);
     }
