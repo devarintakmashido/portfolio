@@ -370,8 +370,8 @@ kbd {
 .up { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 600; }
 .up .dot { width: 7px; height: 7px; }
 .photo { position: relative; margin: 0; border-radius: 12px; overflow: hidden; aspect-ratio: 4 / 5; background: var(--bg-2); }
-.photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; transition: transform .8s var(--ease); }
-.svc-card:hover .photo img { transform: scale(1.03); }
+.photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; transform-origin: 36% 70%; transition: transform .8s var(--ease); }
+.svc-card:hover .photo img { transform: scale(1.06); }
 .monogram {
   position: absolute; inset: 0; display: none; place-items: center;
   background:
@@ -383,7 +383,7 @@ kbd {
 .photo.no-photo img { display: none; }
 .photo.no-photo .monogram { display: grid; }
 .photo figcaption {
-  position: absolute; left: 10px; bottom: 10px; right: 10px; width: max-content; max-width: calc(100% - 20px);
+  position: absolute; right: 10px; bottom: 10px; width: max-content; max-width: calc(100% - 20px);
   padding: 5px 10px; border-radius: 8px; font-size: 11.5px;
   color: #fff; background: rgba(10, 10, 8, .55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
 }

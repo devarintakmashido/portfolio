@@ -1,2 +1,4 @@
 .DS_Store
 .claude/
+# original photo uploads (the cropped copy lives in assets/img)
+IMG-*
